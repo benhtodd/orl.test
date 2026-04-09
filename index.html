@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentation Downloads</title>
+  <meta
+    name="description"
+    content="A simple page for presentation attendees to access and download slide materials."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="logo-lockup" aria-label="Logo placeholder">
+        <div class="logo-mark">LOGO</div>
+        <div class="logo-copy">
+          <p class="eyebrow">Presentation Resources</p>
+          <h1>Download the slides and supporting files.</h1>
+        </div>
+      </div>
+      <p class="intro">
+        This page gives attendees one clean place to access the presentation deck and any related
+        handouts. Box links can be added here as they become available.
+      </p>
+    </header>
+
+    <main class="content">
+      <section class="card" aria-labelledby="downloads-title">
+        <div class="section-heading">
+          <p class="section-label">Downloads</p>
+          <h2 id="downloads-title">Files for attendees</h2>
+        </div>
+        <div class="download-list">
+          <a class="download-item" href="#" aria-disabled="true">
+            <span class="file-name">Slide Deck</span>
+            <span class="file-meta">Box link pending</span>
+          </a>
+          <a class="download-item" href="#" aria-disabled="true">
+            <span class="file-name">Handout</span>
+            <span class="file-meta">Box link pending</span>
+          </a>
+          <a class="download-item" href="#" aria-disabled="true">
+            <span class="file-name">Reference Materials</span>
+            <span class="file-meta">Box link pending</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="card muted-card" aria-labelledby="notes-title">
+        <div class="section-heading">
+          <p class="section-label">Notes</p>
+          <h2 id="notes-title">What to expect</h2>
+        </div>
+        <p>
+          Use this area for a short conference note, session title, speaker name, or instructions
+          for how attendees should use the files after download.
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
