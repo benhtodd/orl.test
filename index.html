@@ -17,53 +17,110 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="hero">
-      <div class="logo-lockup" aria-label="Logo placeholder">
-        <div class="logo-mark">LOGO</div>
-        <div class="logo-copy">
-          <p class="eyebrow">Presentation Resources</p>
-          <h1>Download the slides and supporting files.</h1>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
+        <div class="brand-mark">LOGO</div>
+        <div>
+          <p class="brand-label">Presentation Portal</p>
+          <p class="brand-name">Attendee File Access</p>
         </div>
       </div>
-      <p class="intro">
-        This page gives attendees one clean place to access the presentation deck and any related
-        handouts. Box links can be added here as they become available.
-      </p>
-    </header>
+      <div class="header-meta">Presentation materials and follow-up resources</div>
+    </div>
+  </header>
+
+  <div class="page-shell">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Session Materials</p>
+          <h1>Access the slide deck and supporting downloads.</h1>
+          <p class="intro">
+            A streamlined attendee page for presentation assets, built to make file access direct,
+            organized, and easy to understand during or after the session.
+          </p>
+        </div>
+        <aside class="hero-panel" aria-label="Session overview">
+          <p class="hero-panel-title">Resource Status</p>
+          <p class="hero-panel-value">Live downloads available</p>
+          <p class="hero-panel-note">
+            The slide deck is published below now. Additional Box-hosted materials can be added as
+            they are released.
+          </p>
+        </aside>
+      </div>
+    </section>
 
     <main class="content">
-      <section class="card" aria-labelledby="downloads-title">
+      <section class="card downloads-card" aria-labelledby="downloads-title">
         <div class="section-heading">
           <p class="section-label">Downloads</p>
           <h2 id="downloads-title">Files for attendees</h2>
+          <p class="section-copy">
+            Use the links below to open or download the presentation assets. Items without links
+            are placeholders for follow-up documents that can be published later.
+          </p>
         </div>
         <div class="download-list">
           <a class="download-item" href="slides/erica.demo.pdf">
-            <span class="file-name">Slide Deck</span>
-            <span class="file-meta">PDF available now</span>
+            <span class="download-icon">PDF</span>
+            <span class="download-main">
+              <span class="file-name">Slide Deck</span>
+              <span class="file-description">Presentation deck in PDF format for attendee download.</span>
+            </span>
+            <span class="file-meta">Available now</span>
           </a>
           <a class="download-item" href="#" aria-disabled="true">
-            <span class="file-name">Handout</span>
-            <span class="file-meta">Box link pending</span>
+            <span class="download-icon">DOC</span>
+            <span class="download-main">
+              <span class="file-name">Handout</span>
+              <span class="file-description">Supporting takeaways or summary notes for the session.</span>
+            </span>
+            <span class="file-meta">Link pending</span>
           </a>
           <a class="download-item" href="#" aria-disabled="true">
-            <span class="file-name">Reference Materials</span>
-            <span class="file-meta">Box link pending</span>
+            <span class="download-icon">ZIP</span>
+            <span class="download-main">
+              <span class="file-name">Reference Materials</span>
+              <span class="file-description">Additional resources, examples, or post-session materials.</span>
+            </span>
+            <span class="file-meta">Link pending</span>
           </a>
         </div>
       </section>
 
-      <section class="card muted-card" aria-labelledby="notes-title">
-        <div class="section-heading">
-          <p class="section-label">Notes</p>
-          <h2 id="notes-title">What to expect</h2>
-        </div>
-        <p>
-          Use this area for a short conference note, session title, speaker name, or instructions
-          for how attendees should use the files after download.
-        </p>
-      </section>
+      <aside class="sidebar">
+        <section class="card note-card" aria-labelledby="notes-title">
+          <div class="section-heading">
+            <p class="section-label">Overview</p>
+            <h2 id="notes-title">What attendees should know</h2>
+          </div>
+          <ul class="note-list">
+            <li>
+              <strong>Fast access</strong>
+              Files are organized so attendees can get directly to the deck without extra navigation.
+            </li>
+            <li>
+              <strong>Simple updates</strong>
+              New Box links can be dropped in later without changing the page structure.
+            </li>
+            <li>
+              <strong>Presentation-ready</strong>
+              The layout is designed to read clearly on desktop and mobile during a live session.
+            </li>
+          </ul>
+        </section>
+
+        <section class="card support-card" aria-labelledby="support-title">
+          <p class="section-label">Next Step</p>
+          <h3 id="support-title">Add final brand assets</h3>
+          <p>
+            Replace the placeholder logo block in the top header when your approved session or
+            company mark is ready, then swap pending items to Box links as files are published.
+          </p>
+        </section>
+      </aside>
     </main>
   </div>
 </body>
